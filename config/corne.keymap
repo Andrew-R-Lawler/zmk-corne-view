@@ -13,7 +13,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kpLGUI &kp F &kp I &kp R &kp E &kp RET> 
+                = <&macro_tap &kp LGUI &kp F &kp I &kp R &kp E &kp RET> 
                 ;
         };
         signal: signal {
