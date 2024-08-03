@@ -13,7 +13,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LGUI &kp F &kp I &kp R &kp E &kp RET>
+                = <&macro_tap &kp LGUI>
+                , <&macro_wait_time 100>
+                , <&macro_tap &kp F &kp I &kp R &kp E &kp RET> 
                 ;
         };
         signal: signal {
@@ -33,27 +35,27 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // | NONE |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | NONE |
-// | NONE |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  | ;/' | NONE |
+// | NONE |  A  |  S  |  D  |  F/LSHFT  |  G  |   |  H  |  J/LSHFT   |  K  |  L  | ;/' | NONE |
 // | NONE |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | NONE |
-//                    | LSHFT | LWR | SPC |   | ENT | RSE  | LGUI/LSHFT |
+//                    | CTRL | LWR | SPC |   | ENT | RSE  | LGUI |
                         bindings = <
    &none &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I  &kp O   &kp P    &none
-   &none &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K  &kp L   &mt SEMI SQT &none
+   &none &kp A &kp S &kp D &mt LSHFT F &kp G   &kp H &mt LSHFT J  &kp K  &kp L   &mt SEMI SQT &none
    &none &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &none
-                  &kp LSHIFT &mo 1 &kp SPACE   &kp RET &mo 2 &mt LSHFT LGUI
+                  &kp LCTRL &mo 1 &kp SPACE   &kp RET &mo 2 &kp LGUI
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // | NONE |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | NONE |
 // | NONE | BT1 | BT2 | BT3 | BT4 | BT5 |   | BTCLR | LFT | DWN |  UP | RGT | NONE |
-// | NONE | FIREFOX | SIGNAL |     |     |     |   |     | TAB |     |     |     | NONE |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// | NONE | FIREFOX | SIGNAL |     |     |     |   | TAB |     |     |     |     | NONE |
+//                    | GUI |     | SPC |   | ALT |     |    |
                         bindings = <
    &none &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9     &kp N0    &none
    &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &bt BT_CLR &kp LEFT &kp DOWN &kp UP &kp RIGHT &none 
-   &none &firefox     &signal      &trans       &trans       &trans         &trans   &kp TAB   &trans  &trans  &trans &none
-                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans  &kp RALT
+   &none &firefox     &signal      &trans       &trans       &trans         &kp TAB   &trans   &trans  &trans  &trans &none
+                                    &kp LGUI     &trans       &kp SPACE      &kp ALT  &trans  &trans
                         >;
                 };
 
