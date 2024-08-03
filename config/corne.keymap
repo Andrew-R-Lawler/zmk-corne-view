@@ -14,9 +14,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             bindings
-                = <&macro_tap &kp LGUI>
-                , <&macro_wait_time 100>
-                , <&macro_tap &kp F &kp I &kp R &kp E &kp RET> 
+                = <&macro_tap &kp LGUI &kp F &kp I &kp R &kp E &kp RET> 
                 ;
         };
         signal: signal {
