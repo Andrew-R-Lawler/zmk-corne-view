@@ -12,6 +12,7 @@
         firefox: firefox {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <10>;
             bindings
                 = <&macro_tap &kp LGUI>
                 , <&macro_wait_time 100>
@@ -39,8 +40,8 @@
 // | NONE |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | NONE |
 //                    | CTRL | LWR | SPC |   | ENT | RSE  | LGUI |
                         bindings = <
-   &none &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I  &kp O   &kp P    &none
-   &none &kp A &kp S &kp D &mt LSHFT F &kp G   &kp H &mt LSHFT J  &kp K  &kp L   &mt SEMI SQT &none
+   &none &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I  &kp O   &kp P  &none
+   &none &kp A &kp S &kp D &mt LSHFT F &kp G   &kp H &mt LSHFT J  &kp K  &kp L  &mt SEMI SQT &none
    &none &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &none
                   &kp LCTRL &mo 1 &kp SPACE   &kp RET &mo 2 &kp LGUI
                         >;
