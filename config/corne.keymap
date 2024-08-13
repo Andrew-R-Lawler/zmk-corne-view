@@ -33,7 +33,7 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // | NONE |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | NONE |
-// | NONE |  A/LGUI  |  S/ALT  |  D/CTRL |  F/LSHFT  |  G  |   |  H  |  J/LSHFT   |  K/CTRL  |  L/ALT  | ;/' | NONE |
+// | NONE |  A  |  S/ALT  |  D/CTRL |  F/LSHFT  |  G  |   |  H  |  J/LSHFT   |  K/CTRL  |  L/ALT  | ;/' | NONE |
 // | NONE |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | NONE |
 //                    | TAB | LWR | SPC |   | ENT | RSE  | LGUI |
                         bindings = <
