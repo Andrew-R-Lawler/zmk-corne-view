@@ -38,7 +38,7 @@
 //                    | TAB | LWR | SPC |   | ENT | RSE  | LGUI |
                         bindings = <
    &none &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I  &kp O   &kp P  &none
-   &none &kp A &kp S &mt LCTRL D &mt LSHFT F &kp G   &kp H  &mt LSHFT J  &mt LCTRL K  &kp L  &mt SEMI SQT &none
+   &none &kp A &kp S &mt LCTRL D &mt LSHFT F &kp G   &kp H  &mt LSHFT J  &mt LCTRL K  &mt RALT L  &mt SEMI SQT &none
    &none &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &none
                   &kp TAB &mo 1 &kp SPACE   &kp RET &mo 2 &kp LGUI
                         >;
