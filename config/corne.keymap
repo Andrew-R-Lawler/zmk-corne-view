@@ -23,6 +23,15 @@
                 = <&macro_tap &kp LGUI &kp S &kp I &kp G &kp N &kp RET>
                 ;
         };
+        terminal: terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp CTRL>
+                , <&macro_tap &kp GRAVE>
+                , <&macro_release &kp CTRL>
+                ;
+        };
     };
 };
 
