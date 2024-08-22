@@ -88,7 +88,7 @@
    &none &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I  &kp O   &kp P  &none
    &none &kp A &mt LALT S &mt LCTRL D &mt LSHFT F &kp G   &kp H  &mt LSHFT J  &mt LCTRL K  &mt RALT L  &mt SEMI SQT &none
    &none &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &none
-                  &kp TAB &mo 1 &kp SPACE   &kp RET &mo 2 &mt DEL LGUI
+                  &kp TAB &mo 1 &kp SPACE   &kp RET &mo 2 &kp LGUI
                         >;
                 };
                 lower_layer {
@@ -96,12 +96,12 @@
 // | NONE |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | NONE |
 // | NONE | BT1 | BT2 | BT3 | BT4 | BT5 |   |  BTCLR  | LFT | DWN |  UP | RGT | NONE |
 // | NONE | SCREENSHOT |     |     |     |     |   |     |     |     |     |  TOGGLE 3  | NONE |
-//                    |     | NONE |     |   |     |     | ESC |
+//                    |     | NONE |     |   |     | DEL | ESC |
                         bindings = <
    &none    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &none
    &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &bt BT_CLR &kp LEFT &kp DOWN &kp UP &kp RIGHT &none
    &none  &screenshot   &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans   &tog 3 &none
-                                    &trans     &none       &trans     &trans  &trans   &kp ESC
+                                    &trans     &none       &trans     &trans  &kp DEL   &kp ESC
                         >;
                 };
                 raise_layer {
