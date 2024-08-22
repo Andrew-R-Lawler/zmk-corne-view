@@ -76,6 +76,15 @@
                 , <&macro_release &kp LCTRL>
                 ;
         };
+        linuxterminal: linuxterminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LSHFT>
+                , <&macro_tap &kp GRAVE>
+                , <&macro_release &kp LCTRL &kp LSHFT>
+                ;
+        };
     };
 };
 
@@ -117,12 +126,12 @@
 // -----------------------------------------------------------------------------------------
 // | NONE |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  (  |  ) |  *  | NONE |
 // | NONE | VSCODE | FIREFOX | SIGNAL |     |     |   |  -  |  =  |  [  |  ]  |  \  | NONE |
-// | NONE | STATUS | COMMIT | PUSH | WINDOWSTERMINAL |     |   |  _  |  +  |  {  |  }  | "|" | NONE |
+// | NONE | STATUS | COMMIT | PUSH | WINDOWSTERMINAL | LINUXTERMINAL |   |  _  |  +  |  {  |  }  | "|" | NONE |
 //                    | GUI |     | BKSP|   | ENT |     | ALT |
                         bindings = <
    &none  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS &kp LPAR &kp RPAR &kp ASTRK &none
    &none &vscode &firefox &signal   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &none
-   &none &status &commit &push &windowsterminal   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &none
+   &none &status &commit &push &windowsterminal &linuxterminal   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &none
                              &kp LGUI &trans &kp BSPC    &kp RET   &trans    &kp RALT
                         >;
                 };
