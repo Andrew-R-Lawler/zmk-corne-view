@@ -25,6 +25,11 @@
                 ;
         };
     };
+    behaviors {
+        mt: mod_tap {
+                flavor = "tap-preferred"
+        };
+    };
 };
 
 / {
