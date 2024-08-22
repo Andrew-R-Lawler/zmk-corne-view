@@ -39,7 +39,7 @@
             #binding-cells = <0>;
             wait-ms = <100>;
             bindings
-                = <&macro_tap &kp v &kp S &kp RET>
+                = <&macro_tap &kp LGUI &kp V &kp S &kp RET>
                 ;
         };
     };
