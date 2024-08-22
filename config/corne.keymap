@@ -41,7 +41,7 @@
             bindings
                 = <&macro_tap &kp v &kp S &kp RET>
                 ;
-        }
+        };
     };
 };
 
