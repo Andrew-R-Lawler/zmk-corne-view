@@ -13,7 +13,7 @@
         firefox: firefox {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = 100;
+            wait-ms = <100>;
             bindings
                 = <&macro_tap &kp LGUI &kp F &kp I &kp R &kp E &kp RET> 
                 ;
@@ -21,7 +21,7 @@
         signal: signal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = 100;
+            wait-ms = <100>;
             bindings
                 = <&macro_tap &kp LGUI &kp S &kp I &kp G &kp N &kp RET>
                 ;
