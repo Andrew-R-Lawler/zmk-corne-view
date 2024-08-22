@@ -42,6 +42,14 @@
                 = <&macro_tap &kp LGUI &kp V &kp S &kp RET>
                 ;
         };
+        status: status {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings
+                = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp S &kp T &kp A &kp T &kp U &kp S &kp RET>
+                ;
+        };
     };
 };
 
@@ -83,12 +91,12 @@
 // -----------------------------------------------------------------------------------------
 // | NONE |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | NONE |
 // | NONE | VSCODE | FIREFOX | SIGNAL |     |     |   |  -  |  =  |  [  |  ]  |  \  | NONE |
-// | NONE |     |     | COMMIT |     |     |   |  _  |  +  |  {  |  }  | "|" | NONE |
+// | NONE | STATUS | COMMIT |     |     |     |   |  _  |  +  |  {  |  }  | "|" | NONE |
 //                    | GUI |     | BKSP|   | ENT |     | ALT |
                         bindings = <
    &none  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &none
    &none &vscode &firefox &signal   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &none
-   &none &trans &trans &commit &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &none
+   &none &status &commit &trans &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &none
                              &kp LGUI &trans &kp BSPC    &kp RET   &trans    &kp RALT
                         >;
                 };
