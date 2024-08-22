@@ -83,7 +83,7 @@
 // | NONE |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | NONE |
 // | NONE |  A  |  S/ALT  |  D/CTRL |  F/LSHFT  |  G  |   |  H  |  J/LSHFT   |  K/CTRL  |  L/ALT  | ;/' | NONE |
 // | NONE |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | NONE |
-//                    | TAB | LWR | SPC |   | ENT | RSE  | LGUI/DEL |
+//                    | TAB | LWR | SPC |   | ENT | RSE  | LGUI |
                         bindings = <
    &none &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I  &kp O   &kp P  &none
    &none &kp A &mt LALT S &mt LCTRL D &mt LSHFT F &kp G   &kp H  &mt LSHFT J  &mt LCTRL K  &mt RALT L  &mt SEMI SQT &none
@@ -106,12 +106,12 @@
                 };
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | NONE |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | NONE |
+// | NONE |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  (  |  ) |  *  | NONE |
 // | NONE | VSCODE | FIREFOX | SIGNAL |     |     |   |  -  |  =  |  [  |  ]  |  \  | NONE |
 // | NONE | STATUS | COMMIT | PUSH |     |     |   |  _  |  +  |  {  |  }  | "|" | NONE |
 //                    | GUI |     | BKSP|   | ENT |     | ALT |
                         bindings = <
-   &none  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &none
+   &none  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS &kp LPAR &kp RPAR &kp ASTRK &none
    &none &vscode &firefox &signal   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &none
    &none &status &commit &push &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &none
                              &kp LGUI &trans &kp BSPC    &kp RET   &trans    &kp RALT
