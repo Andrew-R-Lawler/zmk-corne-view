@@ -26,6 +26,14 @@
                 = <&macro_tap &kp LGUI &kp S &kp I &kp G &kp N &kp RET>
                 ;
         };
+        commit: commit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <50>;
+            bindings
+                = <&macro_tap &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp A &kp M &kp SPACE &kp SQT &kp SQT &kp LEFT>
+                ;
+        };
     };
 };
 
@@ -67,12 +75,12 @@
 // -----------------------------------------------------------------------------------------
 // | NONE |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | NONE |
 // | NONE |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  | NONE |
-// | NONE | FIREFOX | SIGNAL |     |     |     |   |  _  |  +  |  {  |  }  | "|" | NONE |
+// | NONE | FIREFOX | SIGNAL | COMMIT |     |     |   |  _  |  +  |  {  |  }  | "|" | NONE |
 //                    | GUI |     | BKSP|   | ENT |     | ALT |
                         bindings = <
    &none  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &none
    &none &trans &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &none
-   &none &firefox &signal &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &none
+   &none &firefox &signal &commit &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &none
                              &kp LGUI &trans &kp BSPC    &kp RET   &trans    &kp RALT
                         >;
                 };
