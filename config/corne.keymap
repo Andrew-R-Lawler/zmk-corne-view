@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/mouse.h>
 
 / {
     macros {
@@ -113,12 +114,12 @@
 // -----------------------------------------------------------------------------------------
 // | NONE |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | NONE |
 // | NONE | BT1 | BT2 | BT3 | BT4 | BT5 |   |  BTCLR  | LFT | DWN |  UP | RGT | NONE |
-// | NONE | SCREENSHOT |     |     |     |     |   |     |     |     |     |  TOGGLE 3  | NONE |
+// | NONE | SCREENSHOT |     | MOUSE1 | MOUSE3 | MOUSE2 |   |     |     |     |     |  TOGGLE 3  | NONE |
 //                    |     | NONE | ENT |   |     | DEL | ESC |
                         bindings = <
    &none    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &none
    &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &bt BT_CLR &kp LEFT &kp DOWN &kp UP &kp RIGHT &none
-   &none  &screenshot   &trans     &trans       &trans       &trans         &trans   &trans   &trans &trans   &tog 3 &none
+   &none  &screenshot   &trans     &mkp MB1       &mkp MB3       &mkp MB2         &trans   &trans   &trans &trans   &tog 3 &none
                                     &trans     &none       &kp RET     &trans  &kp DEL   &kp ESC
                         >;
                 };
