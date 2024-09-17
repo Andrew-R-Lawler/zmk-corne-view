@@ -32,7 +32,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             bindings
-                = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp A &kp M &kp SPACE &kp DQT &kp QT &kp LEFT>
+                = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp A &kp M &kp SPACE &kp DQT &kp DQT &kp LEFT>
                 ;
         };
         vscode: vscode {
