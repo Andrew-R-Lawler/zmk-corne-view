@@ -32,7 +32,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             bindings
-                = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp A &kp M &kp SPACE &kp SQT &kp SQT &kp LEFT>
+                = <&macro_tap &kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp A &kp M &kp SPACE &kp DQT &kp QT &kp LEFT>
                 ;
         };
         vscode: vscode {
@@ -131,7 +131,7 @@
 //                    | GUI |     | BKSP|   | ENT |     | ALT |
                         bindings = <
    &none  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS &kp LPAR &kp RPAR &kp ASTRK &none
-   &none &vscode &firefox &signal   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &none
+   &none &vscode &firefox &signal   &trans   &trans      &kp MINUS &mt GRAVE EQUAL &kp LBKT  &kp RBKT &kp BSLH &none
    &none &status &commit &push &windowsterminal &linuxterminal   &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &none
                              &kp LGUI &trans &kp BSPC    &kp RET   &trans    &kp RALT
                         >;
